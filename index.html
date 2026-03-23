@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acessorios da Paula | Moda e Estilo</title>
+    <meta
+      name="description"
+      content="Loja Acessorios da Paula: roupas e acessórios com estilo autoral, coleções modernas e atendimento personalizado."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <div class="utility-bar">
+      <p>Frete para todo Brasil | 5% OFF no Pix | Atendimento no WhatsApp</p>
+    </div>
+
+    <header class="topbar" id="topbar">
+      <a href="#" class="brand">Acessorios da Paula</a>
+      <nav class="menu">
+        <a href="#colecoes">Colecoes</a>
+        <a href="#provador">Provador</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#destaques" class="cta">Ver produtos</a>
+    </header>
+
+    <main>
+      <section class="hero section-reveal">
+        <div class="hero-copy">
+          <p class="kicker">Moda feminina e acessórios autorais</p>
+          <h1>Seu estilo ganha vida na <span>Acessorios da Paula</span>.</h1>
+          <p>
+            Descubra roupas e acessórios selecionados para quem ama tendência,
+            conforto e personalidade em cada detalhe.
+          </p>
+          <form class="search-box">
+            <input
+              type="text"
+              placeholder="Buscar vestido, bolsa, colar..."
+              aria-label="Buscar produtos"
+            />
+            <button type="button">Buscar</button>
+          </form>
+          <div class="hero-badges">
+            <span>Entrega para todo Brasil</span>
+            <span>Troca facilitada</span>
+            <span>Parcele em ate 10x</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#colecoes" class="btn btn-primary">Explorar colecoes</a>
+            <a href="#lookbook" class="btn btn-ghost">Montar meu look</a>
+          </div>
+        </div>
+        <div class="hero-cards">
+          <article class="float-card card-a">
+            <h3>Nova Colecao</h3>
+            <p>Outono urbano com tecidos leves e cortes modernos.</p>
+          </article>
+          <article class="float-card card-b">
+            <h3>Acessorios em alta</h3>
+            <p>Bolsas, brincos e pulseiras para completar qualquer producao.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="benefits section-reveal">
+        <article>
+          <h3>Frete para todo Brasil</h3>
+          <p>Consulte regras por regiao e valor minimo.</p>
+        </article>
+        <article>
+          <h3>5% OFF no Pix</h3>
+          <p>Desconto aplicado no fechamento da compra.</p>
+        </article>
+        <article>
+          <h3>6x sem juros</h3>
+          <p>Ou ate 10x fixas no cartao para facilitar.</p>
+        </article>
+      </section>
+
+      <section class="collections section-reveal" id="colecoes">
+        <div class="section-header">
+          <p class="kicker">Compre por categoria</p>
+          <h2>Roupas e acessorios que vendem toda semana</h2>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card">
+            <div class="cover cover-1"></div>
+            <h3>Vestidos</h3>
+            <p>Modelagens midi, longas e festa para diferentes ocasioes.</p>
+            <a href="#">Comprar agora</a>
+          </article>
+          <article class="collection-card">
+            <div class="cover cover-2"></div>
+            <h3>Conjuntos</h3>
+            <p>Looks prontos para trabalho, jantar e final de semana.</p>
+            <a href="#">Conhecer linha</a>
+          </article>
+          <article class="collection-card">
+            <div class="cover cover-3"></div>
+            <h3>Acessorios</h3>
+            <p>Bolsas, cintos e semijoias para completar a producao.</p>
+            <a href="#">Ver acessórios</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="scroll-style section-reveal" id="provador">
+        <div class="section-header">
+          <p class="kicker">Experiencia de moda</p>
+          <h2>Provador interativo por rolagem</h2>
+        </div>
+        <div class="style-lab" id="style-lab">
+          <div class="model-stage">
+            <div class="model-base"></div>
+            <div class="clothing-layer dress-layer" data-scroll-layer="dress"></div>
+            <div class="clothing-layer jacket-layer" data-scroll-layer="jacket"></div>
+            <div class="clothing-layer bag-layer" data-scroll-layer="bag"></div>
+            <div class="clothing-layer necklace-layer" data-scroll-layer="necklace"></div>
+            <div class="stage-shadow"></div>
+          </div>
+          <aside class="style-notes">
+            <p>
+              Role esta secao e acompanhe o look sendo montado em tempo real.
+            </p>
+            <ul>
+              <li><span>01</span> Vestido base aparece</li>
+              <li><span>02</span> Jaqueta entra com movimento</li>
+              <li><span>03</span> Bolsa e colar finalizam o visual</li>
+            </ul>
+            <div class="look-meter">
+              <small>Nivel de composicao</small>
+              <div class="meter-track">
+                <div class="meter-fill" id="look-meter-fill"></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories section-reveal" id="categorias">
+        <div class="section-header">
+          <p class="kicker">Compre por ocasiao</p>
+          <h2>Selecione o look certo para cada momento</h2>
+        </div>
+        <div class="category-row">
+          <article class="category-pill">Looks noite</article>
+          <article class="category-pill">Moda festa</article>
+          <article class="category-pill">Moda trabalho</article>
+          <article class="category-pill">Casual chic</article>
+          <article class="category-pill">Basicos premium</article>
+          <article class="category-pill">Jeans</article>
+          <article class="category-pill">Verao 2026</article>
+          <article class="category-pill">Saldo ate 70% off</article>
+        </div>
+      </section>
+
+      <section class="products section-reveal" id="destaques">
+        <div class="section-header">
+          <p class="kicker">Pecas em destaque</p>
+          <h2>Novidades e best sellers</h2>
+        </div>
+        <div class="product-row">
+          <article class="product-card">
+            <div class="product-image image-1"></div>
+            <h3>Body Decote V Cavado</h3>
+            <p>Malha premium com caimento firme e toque macio.</p>
+            <strong>R$ 249,90</strong>
+            <small>ou 6x de R$ 41,65</small>
+            <button>Adicionar ao carrinho</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image image-2"></div>
+            <h3>Calca Alfaiataria Cargo</h3>
+            <p>Cintura alta e corte moderno para look sofisticado.</p>
+            <strong>R$ 189,90</strong>
+            <small>ou 6x de R$ 31,65</small>
+            <button>Adicionar ao carrinho</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image image-3"></div>
+            <h3>Vestido Longo Drapeado</h3>
+            <p>Recorte elegante para eventos noturnos e festas.</p>
+            <strong>R$ 219,90</strong>
+            <small>ou 6x de R$ 36,65</small>
+            <button>Adicionar ao carrinho</button>
+          </article>
+          <article class="product-card">
+            <div class="product-image image-4"></div>
+            <h3>Bolsa Estruturada Fiore</h3>
+            <p>Acabamento premium com metalicos dourados.</p>
+            <strong>R$ 89,90</strong>
+            <small>ou 3x de R$ 29,96</small>
+            <button>Adicionar ao carrinho</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials section-reveal" id="depoimentos">
+        <div class="section-header">
+          <p class="kicker">Clientes satisfeitas</p>
+          <h2>Quem compra, recomenda</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>
+              "A qualidade das pecas e impecavel. Comprei um vestido e uma bolsa
+              e chegaram ainda mais lindos pessoalmente."
+            </p>
+            <h4>Marina A.</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              "Atendimento excelente e entrega rapida. A Paula me ajudou a
+              montar um look completo para evento."
+            </p>
+            <h4>Camila R.</h4>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              "Virei cliente fiel. As colecoes sempre chegam com novidades e
+              muito bom gosto."
+            </p>
+            <h4>Fernanda L.</h4>
+          </article>
+        </div>
+      </section>
+
+      <section class="lookbook section-reveal" id="lookbook">
+        <div class="section-header">
+          <p class="kicker">Lookbook interativo</p>
+          <h2>Role a pagina e acompanhe as tendencias</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>01</span>
+            <h3>Minimal Glam</h3>
+            <p>Base neutra com acessórios de destaque em dourado polido.</p>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <h3>Color Pop</h3>
+            <p>Roupas de tons vivos com bolsa estruturada para contraste.</p>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <h3>Noite Moderna</h3>
+            <p>Tecidos acetinados e brincos longos para um visual marcante.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-news section-reveal">
+        <div class="newsletter-box">
+          <p class="kicker">Clube da Paula</p>
+          <h2>Receba novidades e ofertas exclusivas</h2>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu melhor e-mail" aria-label="Seu e-mail" />
+            <button type="button">Quero receber</button>
+          </form>
+        </div>
+        <div class="faq-box">
+          <h3>Perguntas frequentes</h3>
+          <details>
+            <summary>Qual o prazo de entrega?</summary>
+            <p>Enviamos em ate 24h e o prazo medio varia entre 3 e 8 dias uteis.</p>
+          </details>
+          <details>
+            <summary>Posso trocar se nao servir?</summary>
+            <p>Sim. Voce tem ate 7 dias para solicitar troca de forma simples e rapida.</p>
+          </details>
+          <details>
+            <summary>Vocês vendem no atacado?</summary>
+            <p>Sim, atendemos revendedoras. Entre em contato pelo Instagram para condicoes.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato">
+      <div class="footer-wrap">
+        <div class="footer-brand">
+          <h2>Acessorios da Paula</h2>
+          <p>Moda feminina e acessorios selecionados com curadoria e atendimento personalizado.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <a href="#colecoes">Colecoes</a>
+          <a href="#destaques">Mais vendidos</a>
+          <a href="#depoimentos">Clientes</a>
+        </div>
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <a href="mailto:contato@acessoriosdapaula.com">contato@acessoriosdapaula.com</a>
+          <a href="https://wa.me/5571993698745" target="_blank" rel="noopener noreferrer">WhatsApp: (71) 99369-8745</a>
+          <a href="https://www.instagram.com/acessorios_dapaula22" target="_blank" rel="noopener noreferrer">
+            Instagram @acessorios_dapaula22
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Acessorios da Paula. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <a href="#" class="back-top" id="back-top" aria-label="Voltar ao topo">↑</a>
+    <a
+      href="https://wa.me/5571993698745"
+      class="whatsapp-float"
+      aria-label="Fale no WhatsApp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
