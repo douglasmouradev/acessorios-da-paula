@@ -5,6 +5,8 @@ const glow = document.getElementById("cursor-glow");
 const backTop = document.getElementById("back-top");
 const styleLab = document.getElementById("style-lab");
 const lookMeterFill = document.getElementById("look-meter-fill");
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("mobile-menu");
 const dressLayer = document.querySelector('[data-scroll-layer="dress"]');
 const jacketLayer = document.querySelector('[data-scroll-layer="jacket"]');
 const bagLayer = document.querySelector('[data-scroll-layer="bag"]');
@@ -84,3 +86,19 @@ backTop.addEventListener("click", (event) => {
   event.preventDefault();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    mobileMenu.setAttribute("aria-hidden", String(!isOpen));
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      mobileMenu.setAttribute("aria-hidden", "true");
+    });
+  });
+}

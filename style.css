@@ -124,6 +124,46 @@ body::after {
   gap: 18px;
 }
 
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-radius: 999px;
+  padding: 9px 14px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  background: rgba(22, 12, 28, 0.95);
+  border-radius: 14px;
+  padding: 8px;
+  position: sticky;
+  top: 76px;
+  z-index: 48;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--muted);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.9rem;
+}
+
+.mobile-menu.open {
+  display: grid;
+}
+
 .menu a {
   color: var(--muted);
   text-decoration: none;
@@ -181,6 +221,32 @@ section {
 .benefits p {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.informative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.informative-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+}
+
+.informative-card p {
+  color: var(--muted);
+  margin: 10px 0 14px;
+}
+
+.informative-card a,
+.informative-card span {
+  display: inline-block;
+  color: var(--accent-soft);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .section-header {
@@ -810,6 +876,14 @@ footer {
   }
 
   .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .cta {
     display: none;
   }
 
