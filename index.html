@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acessórios da Paula | Moda feminina</title>
+    <meta
+      name="description"
+      content="Roupas e acessórios com curadoria da Paula. Coleções novas toda semana, envio para todo o Brasil."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <div class="utility-bar">
+      <p>Frete Brasil · 5% no Pix · <a href="https://wa.me/5571993698745">WhatsApp (71) 99369-8745</a></p>
+    </div>
+
+    <header class="topbar" id="topbar">
+      <a href="#" class="brand">
+        <span class="brand-mark">P</span>
+        <span class="brand-text">Acessórios da Paula</span>
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <a href="#colecoes">Coleções</a>
+        <a href="#provador">Provador</a>
+        <a href="#destaques">Loja</a>
+        <a href="#lookbook">Looks</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <a href="#destaques" class="cta">Ver peças</a>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Menu mobile">
+      <a href="#colecoes">Coleções</a>
+      <a href="#provador">Provador</a>
+      <a href="#destaques">Loja</a>
+      <a href="#lookbook">Looks</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <main class="scene-root" id="scene-root">
+      <section class="hero scene-block" data-depth="0.4">
+        <div class="hero-inner">
+          <div class="hero-copy card-3d" data-tilt="light">
+            <p class="eyebrow">Salvador · desde 2018</p>
+            <h1>Moda que <em>acompanha</em> o seu ritmo.</h1>
+            <p class="lead">
+              Vestidos, conjuntos e acessórios escolhidos à mão. Peças que vestem
+              bem no corpo e na rotina — do trabalho ao fim de semana.
+            </p>
+            <div class="hero-actions">
+              <a href="#colecoes" class="btn btn-primary">Ver coleções</a>
+              <a href="https://wa.me/5571993698745" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Falar com a Paula</a>
+            </div>
+            <ul class="hero-stats">
+              <li><strong>+2 mil</strong> clientes</li>
+              <li><strong>6x</strong> sem juros</li>
+              <li><strong>7 dias</strong> para troca</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual card-3d" data-tilt="medium">
+            <div class="hero-frame">
+              <div class="hero-photo photo-main"></div>
+              <div class="hero-photo photo-accent"></div>
+              <div class="hero-tag">
+                <span>Nova chegada</span>
+                <strong>Coleção Outono</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits scene-block" data-depth="0.25">
+        <article class="benefit-card card-3d">
+          <span class="benefit-icon" aria-hidden="true">01</span>
+          <h3>Envio para todo o Brasil</h3>
+          <p>Postamos em até 24h. Prazo médio de 3 a 8 dias úteis.</p>
+        </article>
+        <article class="benefit-card card-3d">
+          <span class="benefit-icon" aria-hidden="true">02</span>
+          <h3>5% de desconto no Pix</h3>
+          <p>Aplicado automaticamente no checkout.</p>
+        </article>
+        <article class="benefit-card card-3d">
+          <span class="benefit-icon" aria-hidden="true">03</span>
+          <h3>Parcelamento facilitado</h3>
+          <p>6x sem juros ou até 10x no cartão.</p>
+        </article>
+      </section>
+
+      <section class="collections scene-block" id="colecoes" data-depth="0.35">
+        <header class="section-head card-3d">
+          <p class="eyebrow">Por categoria</p>
+          <h2>O que está saindo agora</h2>
+        </header>
+        <div class="collection-grid">
+          <article class="collection-card card-3d">
+            <div class="cover cover-1"></div>
+            <div class="collection-body">
+              <h3>Vestidos</h3>
+              <p>Midi, longo e festa — do casual ao evento.</p>
+              <a href="#destaques">Explorar</a>
+            </div>
+          </article>
+          <article class="collection-card card-3d">
+            <div class="cover cover-2"></div>
+            <div class="collection-body">
+              <h3>Conjuntos</h3>
+              <p>Looks prontos para sair de casa com estilo.</p>
+              <a href="#destaques">Explorar</a>
+            </div>
+          </article>
+          <article class="collection-card card-3d">
+            <div class="cover cover-3"></div>
+            <div class="collection-body">
+              <h3>Acessórios</h3>
+              <p>Bolsas, cintos e semijoias para fechar o visual.</p>
+              <a href="#destaques">Explorar</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="scroll-style scene-block" id="provador" data-depth="0.5">
+        <header class="section-head card-3d">
+          <p class="eyebrow">Provador virtual</p>
+          <h2>Monte o look rolando a página</h2>
+        </header>
+        <div class="style-lab card-3d" id="style-lab">
+          <div class="model-stage" id="model-stage">
+            <div class="stage-floor"></div>
+            <div class="model-base"></div>
+            <div class="clothing-layer dress-layer" data-scroll-layer="dress"></div>
+            <div class="clothing-layer jacket-layer" data-scroll-layer="jacket"></div>
+            <div class="clothing-layer bag-layer" data-scroll-layer="bag"></div>
+            <div class="clothing-layer necklace-layer" data-scroll-layer="necklace"></div>
+          </div>
+          <aside class="style-notes">
+            <p class="style-intro">Cada camada entra conforme você desce — como um provador de verdade.</p>
+            <ol class="style-steps">
+              <li data-step="1">Vestido base</li>
+              <li data-step="2">Jaqueta estruturada</li>
+              <li data-step="3">Bolsa + colar</li>
+            </ol>
+            <div class="look-meter">
+              <div class="meter-label">
+                <span>Look completo</span>
+                <span id="look-meter-text">0%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" id="look-meter-fill"></div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="categories scene-block" data-depth="0.2">
+        <div class="category-scroll">
+          <a href="#destaques" class="category-chip">Noite</a>
+          <a href="#destaques" class="category-chip">Festa</a>
+          <a href="#destaques" class="category-chip">Trabalho</a>
+          <a href="#destaques" class="category-chip">Casual</a>
+          <a href="#destaques" class="category-chip">Jeans</a>
+          <a href="#destaques" class="category-chip">Verão 2026</a>
+          <a href="#destaques" class="category-chip highlight">Até 70% off</a>
+        </div>
+      </section>
+
+      <section class="products scene-block" id="destaques" data-depth="0.4">
+        <header class="section-head card-3d">
+          <p class="eyebrow">Destaques da semana</p>
+          <h2>Peças que as clientes mais pedem</h2>
+        </header>
+        <div class="product-grid">
+          <article class="product-card card-3d">
+            <div class="product-image image-1"><span class="badge">Novo</span></div>
+            <div class="product-body">
+              <h3>Body decote V</h3>
+              <p class="price">R$ 249,90 <small>6x R$ 41,65</small></p>
+              <button type="button">Adicionar</button>
+            </div>
+          </article>
+          <article class="product-card card-3d">
+            <div class="product-image image-2"></div>
+            <div class="product-body">
+              <h3>Calça alfaiataria cargo</h3>
+              <p class="price">R$ 189,90 <small>6x R$ 31,65</small></p>
+              <button type="button">Adicionar</button>
+            </div>
+          </article>
+          <article class="product-card card-3d">
+            <div class="product-image image-3"><span class="badge">Best seller</span></div>
+            <div class="product-body">
+              <h3>Vestido longo drapeado</h3>
+              <p class="price">R$ 219,90 <small>6x R$ 36,65</small></p>
+              <button type="button">Adicionar</button>
+            </div>
+          </article>
+          <article class="product-card card-3d">
+            <div class="product-image image-4"></div>
+            <div class="product-body">
+              <h3>Bolsa Fiore</h3>
+              <p class="price">R$ 89,90 <small>3x R$ 29,96</small></p>
+              <button type="button">Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials scene-block" data-depth="0.3">
+        <header class="section-head card-3d">
+          <p class="eyebrow">Quem comprou</p>
+          <h2>Depoimentos reais</h2>
+        </header>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card card-3d">
+            <p>Chegou antes do prazo e o vestido ficou ainda mais bonito ao vivo. Já indiquei para duas amigas.</p>
+            <footer>— Marina, Salvador</footer>
+          </blockquote>
+          <blockquote class="testimonial-card card-3d">
+            <p>A Paula montou meu look inteiro pelo WhatsApp. Atendimento humano, sem robô.</p>
+            <footer>— Camila, Lauro de Freitas</footer>
+          </blockquote>
+          <blockquote class="testimonial-card card-3d">
+            <p>Qualidade consistente. Toda coleção nova eu dou uma olhada no Instagram primeiro.</p>
+            <footer>— Fernanda, Camaçari</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="lookbook scene-block" id="lookbook" data-depth="0.45">
+        <header class="section-head card-3d">
+          <p class="eyebrow">Inspiração</p>
+          <h2>Três combinações para copiar</h2>
+        </header>
+        <div class="lookbook-track">
+          <article class="look-card card-3d">
+            <div class="look-visual look-1"></div>
+            <h3>Minimal glam</h3>
+            <p>Neutros com dourado discreto nos acessórios.</p>
+          </article>
+          <article class="look-card card-3d">
+            <div class="look-visual look-2"></div>
+            <h3>Color pop</h3>
+            <p>Tons vivos + bolsa estruturada de contraste.</p>
+          </article>
+          <article class="look-card card-3d">
+            <div class="look-visual look-3"></div>
+            <h3>Noite moderna</h3>
+            <p>Cetim, brinco longo e salto confortável.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-block scene-block" data-depth="0.3">
+        <div class="newsletter-box card-3d">
+          <h2>Novidades no e-mail</h2>
+          <p>Reposições, promoções e looks da semana — sem spam.</p>
+          <form class="newsletter-form" onsubmit="return false">
+            <input type="email" placeholder="seu@email.com" aria-label="Seu e-mail" />
+            <button type="button">Inscrever</button>
+          </form>
+        </div>
+        <div class="contact-cards">
+          <a href="https://wa.me/5571993698745" class="contact-card card-3d" target="_blank" rel="noopener noreferrer">
+            <h3>WhatsApp</h3>
+            <p>(71) 99369-8745</p>
+          </a>
+          <a href="https://www.instagram.com/acessorios_dapaula22" class="contact-card card-3d" target="_blank" rel="noopener noreferrer">
+            <h3>Instagram</h3>
+            <p>@acessorios_dapaula22</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contato">
+      <div class="footer-wrap">
+        <div class="footer-brand">
+          <h2>Acessórios da Paula</h2>
+          <p>Moda feminina com curadoria e atendimento de verdade.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Loja</h4>
+          <a href="#colecoes">Coleções</a>
+          <a href="#destaques">Destaques</a>
+          <a href="#lookbook">Looks</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <a href="mailto:contato@acessoriosdapaula.com">contato@acessoriosdapaula.com</a>
+          <a href="https://wa.me/5571993698745" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/acessorios_dapaula22" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Acessórios da Paula</p>
+    </footer>
+
+    <button class="back-top" id="back-top" aria-label="Voltar ao topo" hidden>↑</button>
+    <a
+      href="https://wa.me/5571993698745"
+      class="whatsapp-float"
+      aria-label="Fale no WhatsApp"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.882 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
