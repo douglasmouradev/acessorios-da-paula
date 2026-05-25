@@ -29,6 +29,7 @@
         <span class="brand-text">Acessórios da Paula</span>
       </a>
       <nav class="menu" aria-label="Principal">
+        <a href="#experiencia">Experiência</a>
         <a href="#colecoes">Coleções</a>
         <a href="#provador">Provador</a>
         <a href="#destaques">Loja</a>
@@ -42,6 +43,7 @@
     </header>
 
     <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Menu mobile">
+      <a href="#experiencia">Experiência</a>
       <a href="#colecoes">Coleções</a>
       <a href="#provador">Provador</a>
       <a href="#destaques">Loja</a>
@@ -79,6 +81,43 @@
                 <strong>Coleção Outono</strong>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scroll-cinema" id="experiencia" aria-label="Experiência de rolagem">
+        <div class="scroll-cinema-spacer" id="scroll-cinema-spacer">
+          <div class="scroll-cinema-sticky">
+            <div class="cinema-grain" aria-hidden="true"></div>
+            <div class="cinema-stage" id="cinema-stage">
+              <article class="cinema-panel" data-panel="0">
+                <div class="cinema-panel-img cover-1"></div>
+                <span class="cinema-panel-tag">01</span>
+                <h3>Vestidos</h3>
+              </article>
+              <article class="cinema-panel" data-panel="1">
+                <div class="cinema-panel-img cover-2"></div>
+                <span class="cinema-panel-tag">02</span>
+                <h3>Conjuntos</h3>
+              </article>
+              <article class="cinema-panel" data-panel="2">
+                <div class="cinema-panel-img cover-3"></div>
+                <span class="cinema-panel-tag">03</span>
+                <h3>Acessórios</h3>
+              </article>
+            </div>
+            <div class="cinema-ui card-3d">
+              <p class="eyebrow">Coleções em 3D</p>
+              <h2 class="cinema-title" id="cinema-title">Vestidos que vestem o momento</h2>
+              <p class="cinema-desc" id="cinema-desc">
+                Role a página — a tela trava e os looks passam em profundidade, como no provador digital.
+              </p>
+              <div class="cinema-progress">
+                <span class="cinema-step-num" id="cinema-step">01</span>
+                <div class="cinema-bar"><div class="cinema-bar-fill" id="cinema-bar-fill"></div></div>
+              </div>
+            </div>
+            <p class="cinema-hint" aria-hidden="true"><span>Role para trocar o look</span></p>
           </div>
         </div>
       </section>
@@ -242,12 +281,13 @@
         </div>
       </section>
 
-      <section class="lookbook scene-block" id="lookbook" data-depth="0.45">
+      <section class="lookbook scene-block scene-block--static" id="lookbook">
         <header class="section-head card-3d">
           <p class="eyebrow">Inspiração</p>
           <h2>Três combinações para copiar</h2>
         </header>
-        <div class="lookbook-track">
+        <div class="lookbook-pin" id="lookbook-pin">
+          <div class="lookbook-track" id="lookbook-track">
           <article class="look-card card-3d">
             <div class="look-visual look-1"></div>
             <h3>Minimal glam</h3>
@@ -263,10 +303,11 @@
             <h3>Noite moderna</h3>
             <p>Cetim, brinco longo e salto confortável.</p>
           </article>
+          </div>
         </div>
       </section>
 
-      <section class="contact-block scene-block" data-depth="0.3">
+      <section class="contact-block scene-block scene-block--static" id="newsletter">
         <div class="newsletter-box card-3d">
           <h2>Novidades no e-mail</h2>
           <p>Reposições, promoções e looks da semana — sem spam.</p>
